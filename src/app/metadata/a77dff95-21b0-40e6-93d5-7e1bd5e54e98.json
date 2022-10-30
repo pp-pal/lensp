@@ -1,0 +1,17 @@
+{
+    "version": "2.0.0",
+    "mainContentFocus": "TEXT_ONLY",
+    "metadata_id": "a77dff95-21b0-40e6-93d5-7e1bd5e54e98",
+    "description": "Generated description",
+    "locale": "en-US",
+    "content": "First meta handsUp",
+    "external_url": null,
+    "image": null,
+    "imageMimeType": null,
+    "name": "1st",
+    "attributes": [],
+    "tags": [
+        "ergia"
+    ],
+    "appId": "ergiapp"
+}

@@ -1,0 +1,29 @@
+<mat-card *ngFor="let profile of users" class="example-card" style="margin-top: 0.25em;margin-bottom: 0.25em">
+    <mat-card-header>
+        <img *ngIf="profile.profilePicture" mat-card-avatar src="{{profile.profilePicture}}"
+            routerLink="/user/{{profile.userId}}">
+        <mat-card-title routerLink="/user/{{profile.userId}}">{{profile.userName}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <p>
+            {{(profile.bio ? profile.bio : 'User does not have bio')}}
+        </p>
+        <div style="display: flex;">
+            <mat-icon style="margin:0.5em" matTooltip="Collected" *ngIf="profile.collect" aria-hidden="false"
+                aria-label="Example home icon" fontIcon="collections_bookmark" matBadge="{{profile.collect}}">
+            </mat-icon>
+            <mat-icon style="margin:0.5em" matTooltip="Comments" *ngIf="profile.comments" aria-hidden="false"
+                aria-label="Example home icon" fontIcon="chat" matBadge="{{profile.comments}}"></mat-icon>
+            <mat-icon style="margin:0.5em" matTooltip="Mirrors" *ngIf="profile.mirrors" aria-hidden="false"
+                aria-label="Example home icon" fontIcon="share" matBadge="{{profile.mirrors}}"></mat-icon>
+            <mat-icon style="margin:0.5em" matTooltip="Follower" *ngIf="profile.follower" aria-hidden="false"
+                aria-label="Example home icon" fontIcon="groups" matBadge="{{profile.follower}}"></mat-icon>
+            <mat-icon style="margin:0.5em" matTooltip="Following" *ngIf="profile.following" aria-hidden="false"
+                aria-label="Example home icon" fontIcon="group_add" matBadge="{{profile.following}}"></mat-icon>
+            <mat-icon style="margin:0.5em" matTooltip="Post" *ngIf="profile.post" aria-hidden="false"
+                aria-label="Example home icon" fontIcon="description" matBadge="{{profile.post}}"></mat-icon>
+            <mat-icon style="margin:0.5em" matTooltip="Publications" *ngIf="profile.publications" aria-hidden="false"
+                aria-label="Example home icon" fontIcon="edit" matBadge="{{profile.publications}}"></mat-icon>
+        </div>
+    </mat-card-content>
+</mat-card>

@@ -1,0 +1,25 @@
+<button mat-raised-button color="warn" (click)="login()" *ngIf="isWalletConnected && !isLogin">Login</button>
+<button mat-raised-button color="warn" (click)="logout()" *ngIf="isLogin">Logout</button>
+<button mat-raised-button color="primary" (click)="connectWallet()" *ngIf="!isWalletConnected">Connect</button>
+<button mat-mini-fab aria-label="Example icon button with a home icon" (click)="openSearchDialog()">
+    <mat-icon>search</mat-icon>
+</button>
+<button color="primary" mat-mini-fab aria-label="Example icon button with a home icon"
+    (click)="openCreateProfileDialog()" *ngIf="isWalletConnected && isLogin">
+    <mat-icon>person_add</mat-icon>
+</button>
+<button color="primary" mat-mini-fab aria-label="Example icon button with a home icon" (click)="myProfile()"
+    *ngIf="isLogin">
+    <mat-icon>account_circle</mat-icon>
+</button>
+<button color="primary" mat-mini-fab aria-label="Example icon button with a home icon" (click)="createPost()"
+    *ngIf="isLogin">
+    <mat-icon>edit</mat-icon>
+</button>
+<button color="primary" mat-mini-fab aria-label="Example icon button with a home icon" (click)="isIndexed()"
+    *ngIf="isLogin">
+    <mat-icon>info</mat-icon>
+</button>
+<button mat-raised-button color="primary" (click)="generateUuid()">Uuid</button>
+
+<app-user-card [users]="listProfiles"></app-user-card>

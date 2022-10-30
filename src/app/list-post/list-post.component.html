@@ -1,0 +1,20 @@
+<h3>User</h3>
+<app-user-card [users]="userProfile"></app-user-card>
+<h3>Publications</h3>
+<mat-card *ngFor="let post of listPost" class="example-card" style="margin-top: 0.25em;margin-bottom: 0.25em">
+    <mat-card-header>
+        <img mat-card-avatar src="{{post.profilePicture}}">
+        <mat-card-title routerLink="/user/{{post.userId}}">{{post.userName}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content *ngIf="post.content">
+        <p class="postId-{{post.postId}}">
+            {{(post.content | slice:0:100)+(post.content.length > 100 ? ' ... ' : '')}}
+            <a *ngIf="post.content.length > 100" routerLink="/post/{{post.postId}}">more</a>
+        </p>
+        <div style="display: flex;">
+            <p style="padding-right:4px" *ngIf="post.collect">Collect : <b>{{post.collect}}</b></p>
+            <p style="padding-right:4px" *ngIf="post.comments">Comments : <b>{{post.comments}}</b></p>
+            <p style="padding-right:4px" *ngIf="post.mirrors">Mirrors : <b>{{post.mirrors}}</b></p>
+        </div>
+    </mat-card-content>
+</mat-card>

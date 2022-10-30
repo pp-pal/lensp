@@ -1,0 +1,17 @@
+{
+    "version": "2.0.0",
+    "mainContentFocus": "TEXT_ONLY",
+    "metadata_id": "c48412a4-1872-4c23-be11-5e976d1ba4f3",
+    "description": "#2 kapp",
+    "locale": "en-US",
+    "content": "It's soon :soonTm:",
+    "external_url": null,
+    "image": null,
+    "imageMimeType": null,
+    "name": "2nd",
+    "attributes": [],
+    "tags": [
+        "ergia"
+    ],
+    "appId": "ergiapp"
+}

@@ -1,0 +1,17 @@
+{
+    "version": "2.0.0",
+    "mainContentFocus": "TEXT_ONLY",
+    "metadata_id": "584b6bc5-aa3f-4cd5-bf73-4f43b743e1b2",
+    "description": "#3 III",
+    "locale": "en-US",
+    "content": "bedge",
+    "external_url": null,
+    "image": null,
+    "imageMimeType": null,
+    "name": "name for 3rd",
+    "attributes": [],
+    "tags": [
+        "ergia"
+    ],
+    "appId": "ergiapp"
+}

@@ -1,0 +1,17 @@
+{
+    "version": "2.0.0",
+    "mainContentFocus": "TEXT_ONLY",
+    "metadata_id": "2922c8f6-27e3-41b6-a0db-3de9a2e4923b",
+    "description": "catJam",
+    "locale": "en-US",
+    "content": "catJam catJam catJam",
+    "external_url": null,
+    "image": null,
+    "imageMimeType": null,
+    "name": "catJam!",
+    "attributes": [],
+    "tags": [
+        "ergia"
+    ],
+    "appId": "ergiapp"
+}
